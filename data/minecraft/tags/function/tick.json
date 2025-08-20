@@ -7,7 +7,7 @@
         },
         {
             "required": false,
-            "id": "scarena:load"
+            "id": "scarena:tick"
         }
     ]
 }
