@@ -1,0 +1,100 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_helmet"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_components",
+            "components": {
+                "minecraft:rarity": "rare",
+                "dyed_color": 15000804,
+                "equippable": {
+                    "slot": "head"
+                },
+                "unbreakable": {},
+                "tooltip_display": {
+                    "hidden_components": [
+                        "minecraft:dyed_color",
+                        "minecraft:unbreakable"
+                    ]
+                },
+                "!attribute_modifiers": {}
+            }
+        },
+        {
+            "function": "minecraft:set_custom_data",
+            "tag": "{spellcrafter:{hat:{valid:1b,type:2}}}"
+        },
+        {
+            "function": "minecraft:set_name",
+            "entity": "this",
+            "target": "item_name",
+            "name": {
+                "translate": "spellcrafter.hat.float.name",
+                "fallback": "Zephyr's Hat"
+            }
+        },
+        {
+            "function": "minecraft:set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                {
+                    "translate": "spellcrafter.hat.float.description.1",
+                    "fallback": "A light hat that gently lifts",
+                    "color": "gray",
+                    "italic": false
+                },
+                {
+                    "translate": "spellcrafter.hat.float.description.2",
+                    "fallback": "the wearer's steps",
+                    "color": "gray",
+                    "italic": false
+                }
+            ]
+        },
+        {
+            "function": "minecraft:set_custom_model_data",
+            "strings": {
+                "values": [
+                    "spellcrafter.hat.float"
+                ],
+                "mode": "replace_all"
+            }
+        },
+        {
+            "function": "minecraft:set_attributes",
+            "modifiers": [
+                {
+                    "id": "spellcrafter:hat.gravity",
+                    "attribute": "minecraft:gravity",
+                    "amount": -0.5,
+                    "operation": "add_multiplied_base",
+                    "slot": "head"
+                },
+                {
+                    "id": "spellcrafter:hat.fall_damage_multiplier",
+                    "attribute": "minecraft:fall_damage_multiplier",
+                    "amount": -1,
+                    "operation": "add_multiplied_base",
+                    "slot": "head"
+                },
+                {
+                    "id": "spellcrafter:hat.jump_strength",
+                    "attribute": "minecraft:jump_strength",
+                    "amount": 0.5,
+                    "operation": "add_multiplied_base",
+                    "slot": "head"
+                }
+            ]
+        }
+    ]
+}

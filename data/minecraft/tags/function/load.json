@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "required": false,
+            "id": "spellcrafter:load"
+        },
+        {
+            "required": false,
+            "id": "scarena:load"
+        }
+    ]
+}
