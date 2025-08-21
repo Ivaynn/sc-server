@@ -1,6 +1,11 @@
 #> as marker
 
+# Note: uncomment this line to test game with only 1 player
+# return 0
+
+
 scoreboard players operation $game.id scarena.tmp = @s scarena.game.id
+scoreboard players operation $game.round scarena.tmp = @s scarena.game.round
 
 scoreboard players set $game.players scarena.tmp 0
 execute as @a[scores={scarena.player.state=4},predicate=scarena:match_game_id] if score @s scarena.game.id = $game.id scarena.tmp run scoreboard players add $game.players scarena.tmp 1

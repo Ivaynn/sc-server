@@ -36,7 +36,9 @@ scoreboard objectives add scarena.player.death minecraft.custom:minecraft.deaths
 scoreboard objectives add scarena.player.state dummy
 scoreboard objectives add scarena.player.room_id dummy
 scoreboard objectives add scarena.player.kills minecraft.custom:minecraft.player_kills
+
 scoreboard objectives add scarena.player.id dummy
+scoreboard objectives setdisplay list scarena.player.id
 
 scoreboard objectives add scarena.stats.time minecraft.custom:minecraft.play_time
 scoreboard objectives add scarena.stats.arena.kills dummy
@@ -47,18 +49,17 @@ scoreboard objectives add scarena.stats.game.wins dummy
 scoreboard objectives add scarena.stats.game.count dummy
 
 scoreboard objectives add scarena.game.id dummy
+scoreboard objectives add scarena.game.apples dummy
 scoreboard objectives add scarena.game.round dummy
 scoreboard objectives add scarena.game.slot dummy
 scoreboard objectives add scarena.game.timer dummy
 scoreboard objectives add scarena.game.x dummy
 scoreboard objectives add scarena.game.z dummy
+scoreboard objectives add scarena.game.lives dummy
 
 scoreboard objectives add scarena.health dummy {text:"❤",color:"red"}
 scoreboard objectives modify scarena.health numberformat styled {color:"red"}
 scoreboard objectives setdisplay below_name scarena.health 
-
-scoreboard objectives add scarena.game.lives dummy
-scoreboard objectives setdisplay list scarena.game.lives
 
 scoreboard objectives add spawn trigger
 scoreboard objectives add arena trigger
@@ -74,6 +75,7 @@ scoreboard players set #n1 scarena.math -1
 scoreboard players set #2 scarena.math 2
 scoreboard players set #3 scarena.math 3
 scoreboard players set #5 scarena.math 5
+scoreboard players set #20 scarena.math 20
 scoreboard players set #32 scarena.math 32
 scoreboard players set #48 scarena.math 48
 scoreboard players set #1k scarena.math 1000
