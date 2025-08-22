@@ -28,6 +28,7 @@ scoreboard objectives add spellcrafter.cache.drain dummy
 scoreboard objectives add spellcrafter.trader_timer dummy
 scoreboard objectives add spellcrafter.actionbar dummy
 scoreboard objectives add spellcrafter.toggle dummy
+scoreboard objectives add spellcrafter.heal dummy
 
 scoreboard objectives add spellcrafter.math dummy
 scoreboard players set #n1 spellcrafter.math -1
@@ -47,5 +48,5 @@ scoreboard players set #100 spellcrafter.math 100
 
 scoreboard objectives add spellcrafter.options dummy
 scoreboard players set #tick spellcrafter.options 1
-scoreboard players set #version spellcrafter.options 4
+scoreboard players set #version spellcrafter.options 5
 function spellcrafter:options/update
